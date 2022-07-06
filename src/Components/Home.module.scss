@@ -1,0 +1,34 @@
+.jumbo {
+  background-image: url("../images/2-min.jpeg");
+  position: relative;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  color: rgb(29, 29, 29);
+  z-index: -2;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.61);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  justify-content: center;
+  text-align: center;
+}
+.jumboTitle {
+  color: white;
+  padding: 50px;
+}
+.jumboText {
+  color: white;
+  padding: 0 100px;
+  font-size: medium;
+}
+.block2 {
+  justify-content: space-between;
+}
