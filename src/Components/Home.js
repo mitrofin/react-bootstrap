@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
       <Slider />;
-      <Container bg="dark" variant="dark">
+      <Container className={s.block2} variant="black">
         <Row>
           <Col>
             <Card style={{ width: "20rem" }}>
@@ -59,18 +59,25 @@ export const Home = () => {
         </Row>
       </Container>
       <Jumbotron />
-      <Container>
-        <div className={s.jumbo}>
-          <div className={s.overlay}></div>
-          <h1>React-Bootstrap</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            hic rerum cum iste! Repellat tempore optio temporibus blanditiis
-            exercitationem asperiores vel explicabo reiciendis. Aut aliquid,
-            pariatur fugit voluptas culpa rerum!
-          </p>
-        </div>
-        ;
+      <Container style={{ marginBottom: "30px", marginTop: "30px" }}>
+        <Row>
+          <Col md={7}>
+            <img src={slider1} alt="foto" height={400} />
+          </Col>
+          <Col md={5}>
+            <h2>Title section</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Explicabo hic rerum cum iste! Repellat tempore optio temporibus
+              blanditiis exercitationem asperiores vel explicabo reiciendis. Aut
+              aliquid, pariatur fugit voluptas culpa rerum!Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Explicabo hic rerum cum
+              iste! Repellat tempore optio temporibus blanditiis exercitationem
+              asperiores vel explicabo reiciendis. Aut aliquid, pariatur fugit
+              voluptas culpa rerum!
+            </p>
+          </Col>
+        </Row>
       </Container>
     </>
   );
